@@ -47,7 +47,7 @@ export default function StarList() {
      <div className="star-list">
         {/* {props.characters.map(characters => {
           <StarChar key={characters} name={props.characters.name}/> */}
-          {data.map((characters, index) => (
+          {characters.map((characters, index) => 
             <StarChar characters={characters.name} gender={characters.gender} height={characters.height} key={index} />)}
       }
         
