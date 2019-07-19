@@ -4,20 +4,12 @@ import StarChar from "./StarChar";
 import styled from "styled-components";
 
 
-// const Buttondays = styled.button`
-//  background-color:#4c87ed;
-//   border-radius:21px;
-//   border:1px solid #4e6096;
-//   display:inline-block;
-//   cursor:pointer;
-//   color:#ffffff;
-//   font-size:17px;
-//   padding:19px 44px;
-//   text-decoration:none;
-//  margin: 1.5rem;
-//  margin-bottom: 3rem;
-// `;
+const Listdesign = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
+`;
 
 export default function StarList() {
   const [characters, setChars] = useState([]);
@@ -44,7 +36,7 @@ export default function StarList() {
    }, []);
 
     return (
-     <div className="star-list">
+     <Listdesign className="star-list">
         {/* {props.characters.map(characters => {
           <StarChar key={characters} name={props.characters.name}/> */}
           {characters.map((characters, index) => 
@@ -53,7 +45,7 @@ export default function StarList() {
         
         )}
 
-     </div>
+     </Listdesign>
    );
     }
 

@@ -21,10 +21,12 @@ import styled from "styled-components";
 
 const Starcontain = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 2rem;
   width: 20%;
   border: 2px solid black;
+  background-color: navy;
+  color: white;
 `;
 
 
