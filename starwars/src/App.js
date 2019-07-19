@@ -1,5 +1,9 @@
 import React, { useState, useEfefect} from 'react';
 import './App.css';
+import StarList from "./components/StarList";
+import StarChar from "./components/StarChar";
+import styled from "styled-components";
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -12,6 +16,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <section>
+     <StarList />
+     </section>
     </div>
   );
 }
